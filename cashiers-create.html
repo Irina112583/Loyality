@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Создание нового кассира</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<body>
+    <section class="page">
+
+        <!-- MENU -->
+
+        <nav class="menu">
+            <!-- Add class "menu__link--active" for active link like below -->
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+                Акции
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+                Отчёты
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+                Мои магазины
+            </a>
+            <a href="#" class="menu__link menu__link--active">
+                <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+                Кассиры
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+                СМС-рассылки
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+                Тарифы
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+                Программа лояльности
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu8.svg" alt=""></span>
+                Начисление и списание <br> бонусов
+            </a>
+            <a href="#" class="menu__link menu__link--active">
+                <span class="menu__icon"><img src="img/menu9.svg" alt=""></span>
+                Социальные сети
+            </a>
+        </nav>
+
+        <div class="page__block">
+
+            <!-- HEADER -->
+
+            <div class="page__header">
+                <div class="page__profile" id="header-profile">
+                    <div class="page__ava">KK</div>
+                    <p class="page__name">
+                        Константин Константинопольский
+                        <span class="page__company">Название компании</span>
+                    </p>
+                    <div class="page__profile-menu" id="header-profile-menu">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <section class="page__content-wrap">
+                <div class="page__content page__content--create">
+
+                <div class="page__top page__top--create">
+                    <span class="page__back"><img src="img/back.svg" alt=""></span>
+                    <h1 class="page__title page__title--create">Создание нового кассира</h1>
+                </div>
+
+                <div class="create-block">
+                    <p class="create-block__label create-block__label--bold">Введите данные кассира</p>
+
+                    <p class="create-block__label create-block__label--light">Имя</p>
+                    <input type="text" class="create-block__input create-block__input--full">
+                    <p class="create-block__label create-block__label--light">Фамилия</p>
+                    <input type="text" class="create-block__input create-block__input--full">
+                    <p class="create-block__label create-block__label--light">Отчество</p>
+                    <input type="text" class="create-block__input create-block__input--full">
+                    <p class="create-block__label create-block__label--light">E-mail кассира</p>
+                    <input type="text" class="create-block__input create-block__input--full">
+                    <p class="create-block__label create-block__label--light">Выбрать магазин</p>
+                    <!-- Add class "create-block__select--opened" to show select options list like below -->
+                    <div class="create-block__select create-block__select--opened">
+                        <div class="create-block__select-value">Магазин</div>
+                        <ul class="create-block__select-list">
+                            <li>Магазин 1</li>
+                            <li>Магазин 2</li>
+                            <li>Магазин 3</li>
+                            <li>Магазин 4</li>
+                            <li>Магазин 5</li>
+                        </ul>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" checked>
+                        <div class="checkbox__text">Отправить пароль кассиру на почту</div>
+                    </label>
+
+                    <div class="text-center">
+                        <button class="button create-block__button">Сохранить</button>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="page__footer"></div>
+        </div>
+    </section>
+
+    <!-- Add class "modal--visible" to show up the modal window like below -->
+    <div class="modal modal--full modal--visible">
+        <div class="modal__block modal__block--create">
+            <span class="modal__close"><img src="img/close.svg" alt=""></span>
+
+            <p class="modal__create-title">Кассир создан!</p>
+
+            <p class="modal__create-text">Пароль для входа в личный кабинет отправлен на электронный адрес кассира</p>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

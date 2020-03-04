@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Редактирование программы лояльности</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<body>
+    <section class="page">
+
+        <!-- MENU -->
+
+        <nav class="menu">
+            <!-- Add class "menu__link--active" for active link like below -->
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+                Акции
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+                Отчёты
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+                Мои магазины
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+                Кассиры
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+                СМС-рассылки
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+                Тарифы
+            </a>
+            <a href="#" class="menu__link menu__link--active">
+                <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+                Программа лояльности
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu8.svg" alt=""></span>
+                Начисление и списание <br> бонусов
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu9.svg" alt=""></span>
+                Социальные сети
+            </a>
+        </nav>
+
+        <div class="page__block">
+
+            <!-- HEADER -->
+
+            <div class="page__header">
+                <div class="page__profile" id="header-profile">
+                    <div class="page__ava">KK</div>
+                    <p class="page__name">
+                        Константин Константинопольский
+                        <span class="page__company">Название компании</span>
+                    </p>
+                    <div class="page__profile-menu" id="header-profile-menu">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <section class="page__content-wrap">
+                <div class="page__content page__content--create">
+
+                <div class="page__top page__top--create">
+                    <span class="page__back"><img src="img/back.svg" alt=""></span>
+                    <h1 class="page__title page__title--create">Программа лояльности</h1>
+                </div>
+
+                <div class="create-block">
+                    <p class="create-block__label">Название программы лояльности</p>
+                    <input type="text" placeholder="Введите название уровня" class="create-block__input create-block__input--full">
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Правило активации уровня</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmLevel1">
+                            <div class="radio__text create-block__radio-with-input">
+                                Разовая покупка от<input type="text" class="create-block__input create-block__input--small">
+                            </div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmLevel1" checked>
+                            <div class="radio__text create-block__radio-with-input">
+                                Общая сумма покупок<input type="text" class="create-block__input create-block__input--small">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group create-block__group--big">
+                        <p class="create-block__label">Дополнительные настройки</p>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSettings1" checked>
+                            <div class="checkbox__text checkbox__text--big_left create-block__radio-with-input">
+                                Начислять<input type="text" class="create-block__input create-block__input--small">бонусов при регистрации
+                            </div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSettings2">
+                            <div class="checkbox__text checkbox__text--big_left create-block__radio-with-input">
+                                Начислять<input type="text" class="create-block__input create-block__input--small">бонусов при совершении первой покупки
+                            </div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSettings3">
+                            <div class="checkbox__text checkbox__text--big_left create-block__radio-with-input">
+                                Списывать бонусы, если минимальная сумма покупки составляет<input type="text" class="create-block__input create-block__input--small">рублей
+                            </div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSettings4">
+                            <div class="checkbox__text checkbox__text--big_left create-block__radio-with-input">
+                                Начислять<input type="text" class="create-block__input create-block__input--small">бонусов пришедшему по рекомендации и<input type="text" class="create-block__input create-block__input--small">порекомендовавшему
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Округление бонусов</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonus" checked>
+                            <div class="radio__text">Не округлять</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonus">
+                            <div class="radio__text">Математически</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonus">
+                            <div class="radio__text">До целых в меньшую сторону</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonus">
+                            <div class="radio__text">До целых в большую сторону</div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">СМС-УВЕДОМЛЕНИЯ</p>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSms1" checked>
+                            <div class="checkbox__text checkbox__text--big_left">Отправлять СМС проверку при регистрации в системе</div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSms2">
+                            <div class="checkbox__text checkbox__text--big_left">Отправлять СМС о начислении бонусов</div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSms3">
+                            <div class="checkbox__text checkbox__text--big_left">Отправлять СМС о списании бонусов</div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSms4">
+                            <div class="checkbox__text checkbox__text--big_left create-block__radio-with-input">
+                                Отправлять СМС за<input type="text" class="create-block__input create-block__input--small">дней о сгорании бонусов
+                            </div>
+                        </label>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSms">
+                            <div class="checkbox__text checkbox__text--big_left">Отправлять СМС-поздравление с Днем Рождения</div>
+                        </label>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="button create-block__button">Сохранить</button>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="page__footer"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

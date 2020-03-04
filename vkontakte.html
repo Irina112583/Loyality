@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Вконтакте</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+<section class="page">
+
+    <!-- MENU -->
+
+    <nav class="menu">
+        <!-- Add class "menu__link--active" for active link like below -->
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+            Акции
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+            Отчёты
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+            Мои магазины
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+            Кассиры
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+            СМС-рассылки
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+            Тарифы
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+            Программа лояльности
+        </a>
+        <a href="#" class="menu__link">
+            <span class="menu__icon"><img src="img/menu8.svg" alt=""></span>
+            Начисление и списание <br> бонусов
+        </a>
+        <a href="#" class="menu__link menu__link--active">
+            <span class="menu__icon"><img src="img/menu9.svg" alt=""></span>
+            Социальные сети
+        </a>
+    </nav>
+
+    <div class="page__block">
+
+        <!-- HEADER -->
+
+        <div class="page__header">
+            <div class="page__profile" id="header-profile">
+                <div class="page__ava">KK</div>
+                <p class="page__name">
+                    Константин Константинопольский
+                    <span class="page__company">Кассир</span>
+                </p>
+                <div class="page__profile-menu" id="header-profile-menu">
+                    <a href="#">Настройки</a>
+                    <a href="#">Выйти</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+
+        <section class="page__content-wrap">
+            <div class="page__content">
+
+                <div class="page__top page__top--create">
+                    <span class="page__back"><img src="img/back.svg" alt=""></span>
+                    <h1 class="page__title page__tile--above-content">Вконтакте</h1>
+                </div>
+
+
+                <div class="create-block">
+                    <p class="create-block__label">Введите id сообщества</p>
+                    <input type="text" placeholder="" class="create-block__input create-block__input--full">
+
+                    <div class="search-customer search-id">
+                        <input type="text" placeholder="https://vk.com/f639grp">
+                        <button class="search-id-button">Копировать ссылку</button>
+                    </div>
+
+                    <div class="text-block-instructions">
+                        <p>
+                            1. Зайдите в настройки сообщества
+                        </p>
+                        <p>
+                            2. Выберите «Работа с API»
+                        </p>
+                        <p>
+                            3. Выберите «Callback API»
+                        </p>
+                        <p>
+                            4. Скопируйте ссылку ссылку полученую выше и вставте в сообществе в поле «Адрес»
+                        </p>
+                        <p>
+                            5. Скопируйте в сообществе строку, которую должен вернуть сервер и введите его в поле ниже
+                        </p>
+                    </div>
+
+                    <p class="create-block__label">Код</p>
+                    <input type="text" placeholder="" class="create-block__input create-block__input--full">
+
+
+                    <div class="customer__flex-buttons">
+                        <button class="button customer__button">Сохранить</button>
+                    </div>
+                </div>
+
+                <div class="create-block">
+                    <p class="create-block__label">Правило начисления бонусов</p>
+                    <div class="create-block__group">
+
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd" checked>
+                            <div class="radio__text create-block__radio-with-input">
+                                Начислять <input type="text" class="create-block__input create-block__input--small">бонусов за Подписку на сообщество
+                            </div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd">
+                            <div class="radio__text create-block__radio-with-input">
+                                Начислять <input type="text" class="create-block__input create-block__input--small"> бонусов за Лайки постов сообщества
+                            </div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd">
+                            <div class="radio__text create-block__radio-with-input">
+                                Начислять <input type="text" class="create-block__input create-block__input--small"> бонусов за Репосты постов в сообществе
+                            </div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd">
+                            <div class="radio__text create-block__radio-with-input">
+                                Начислять <input type="text" class="create-block__input create-block__input--small"> бонусов за Комментарии постов в сообществе
+                            </div>
+                        </label>
+
+                    </div>
+
+                    <div class="customer__flex-buttons">
+                        <button class="button customer__button">Сохранить</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="page__footer"></div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

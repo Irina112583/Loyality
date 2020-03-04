@@ -1,0 +1,131 @@
+@import "../../base/var";
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+
+  &--full {
+    top: 0;
+  }
+
+  &--visible {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  &__block {
+    background: white;
+    border-radius: 5px;
+    position: relative;
+
+    &--sum {
+      padding: 78px 100px 50px;
+    }
+
+    &--created {
+      padding: 70px;
+    }
+
+    &--customer {
+      width: 434px;
+      height: 512px;
+      background: url('../img/customer-modal-bg.png');
+      display: flex;
+      padding: 0 35px;
+
+      .modal__close {
+        top: 40px;
+        right: 21px;
+      }
+    }
+
+    &--delete {
+      overflow: hidden;
+      width: 569px;
+      padding: 76px 68px 58px;
+
+      .modal__close {
+        top: 26px;
+        right: 31px;
+      }
+    }
+
+    &--create {
+      overflow: hidden;
+      width: 590px;
+      padding: 76px 30px;
+
+      .modal__close {
+        top: 26px;
+        right: 31px;
+      }
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+  }
+
+  &__customer-content {
+    border: 1px solid #e3e3e3;
+    border-left: 0;
+    border-right: 0;
+    padding: 60px 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  &__delete-text {
+    font-family: $titleFont;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 9px 0;
+  }
+
+  &__delete-button {
+    width: 190px;
+    height: 40px;
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  // create
+
+  &__create-title {
+    text-align: center;
+    font-family: $titleFont;
+    font-size: 24px;
+    margin-bottom: 27px;
+  }
+
+  &__create-text {
+    font-family: $textFont;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+}
+
+.modal-opened {
+  overflow: hidden;
+}
